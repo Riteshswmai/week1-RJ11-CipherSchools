@@ -58,18 +58,18 @@
 
 //OBJECT DESTRUCTURING 
 
-let detail={
-    name:"sak",
-    age:20,
-    address:{
-        street:"Bro",
-        city:"New",
-        country:"lu",
-        passport:{
-            passno:"01235453"
-        },
-    },
-};
+// let detail={
+//     name:"sak",
+//     age:20,
+//     address:{
+//         street:"Bro",
+//         city:"New",
+//         country:"lu",
+//         passport:{
+//             passno:"01235453"
+//         },
+//     },
+// };
 //console.log(detail.address.passport.passno)
 
 // let myName=detail.name;
@@ -83,22 +83,70 @@ let detail={
 
 //ARRAY MACTHING OBJECT MATCHING
 
- 
+//  let obj1={name:"Rk"};
+//  let obj2={name:"Rk1"}
+
+//  function are(){
+//     if(obj1==obj2){
+//         return true;
+//     }
+//     if(Object.keys(obj1).length != Object.keys(obj2).length)
+//     {
+//         return false;
+//     }
+//     for(let key of Object.keys(obj1)){
+//         if(typeof obj2[key]=="undefined"){
+//             return false;
+//         }
+//        if(obj2[key]==obj1[key]){
+
+//        }
+//     }
+//     return true;
+//  }
+
+// console.log(are(obj1,obj2))
+
+//MAP ans SET
+// let map=new Map()
+// map.set(1,"Rk");
+// map.set(2,"Rki")
+// console.log(map)
+
+// map.keys()
+  
+
+// let set=new Set()
+// set.add(1);
+// set.add(2)
+// set.delete()
+// console.log(set)
 
 
 
+class Animal{
+    noOfLegs;
+    color;
+    family;//js not possibel to consteuct more than one constructor
+    sound;//pass all argument in one counstruction
+//no concept of public and private
+//in class we can create function
 
+    constructor(noOfLegs,color,family,sound){
+       this.noOfLegs=noOfLegs;
+       this.color=color;
+       this.family=family;
+       this.sound=sound;  
+    }
+    showAnimal(){
+  console.log(`athaklgdkgjd ${this.family}`);
+       }
 
-
-
-
-
-
-
-
-
-
-
+    
+}
+let animal=new Animal(4,"brown","rodent","sometin");
+console.log(animal);
+animal.showAnimal();
 
 
 
